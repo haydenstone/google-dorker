@@ -1,58 +1,76 @@
-# 💎 Dork Architect Pro
-> **The Professional OSINT & Search Engineering Power-Tool**
+# 💎 DORK ARCHITECT PRO
 
-Dork Architect is a high-performance bookmarklet designed to transform Google into a surgical data-extraction engine. Skip the syntax errors and manually building complex queries—Dork Architect provides a real-time, visual interface for constructing advanced search operators.
-
----
-
-## 📺 Video Demo & Tutorial
-Click the image below to watch the Dork Architect in action:
-
-[<img src="Screenshot 2026-05-11 130053.png" width="40%">](https://youtu.be/OVf-rKCZ5o8 "Click to play")
+> **THE PROFESSIONAL OSINT & SEARCH ENGINEERING POWER-TOOL**
 
 ---
 
-## 🚀 Installation
+---
 
-1.  **Show your Bookmarks Bar:** Press `Ctrl+Shift+B` (Windows/Linux) or `Cmd+Shift+B` (Mac).
-2.  **Drag the Button:** Visit the [Dork Architect Tool Page](YOUR_GITHUB_PAGES_LINK_HERE) and drag the **🚀 Dork Architect** button directly to your bookmarks bar.
-3.  **Deploy:** Navigate to [Google.com](https://google.com) and click the bookmark to launch the architect.
+### 🌃 OVERVIEW
+
+**Dork Architect** is a high-performance tactical bookmarklet designed to transform Google into a surgical data-extraction engine. Drenched in a low-light cyber-aesthetic, it eliminates syntax errors by providing a real-time, visual interface for constructing complex Boolean search strings.
 
 ---
 
-## 🛠 Features
+## 📺 VIDEO DEMO & TUTORIAL
 
-### 🌐 Operator Core
-Construct complex queries using standard dorks (`site:`, `filetype:`, `inurl:`, `intitle:`) instantly. Supports comma-separated values to automatically generate `OR` logic groups.
-
-### ⏱️ Time-Travel Search
-A precision slider allowing you to filter results by specific time ranges, from the last **60 minutes** to the last **2 years**, or even custom date ranges (MM/DD/YYYY).
-
-### ⚡ Manual Override Mode
-The "Query Review" box allows you to hand-edit the final dork. The tool intelligently detects when you are typing manually and pauses auto-generation to prevent overwriting your custom logic.
-
-### 🔎 SERP Audit & Scrubbing
-* **Highlight:** Enter keywords to visually highlight relevant results in green.
-* **Scrub:** Enter keywords to completely hide unwanted results from the page in real-time.
+Click the terminal interface below to view the deployment briefing:
 
 ---
 
-## ⌨️ Advanced Keyboard Controls
+## 🚀 DEPLOYMENT
 
-* **Edit Mode:** Typing directly in the "Query Review" box stops auto-generation.
-* **Auto-Sync:** Typing in any top field (e.g., "site:") resumes the automated builder.
-* **Clear Memory:** Use the "Clear Memory" button to wipe your local configuration and start fresh.
-
----
-
-## 🔒 Privacy & Data
-Dork Architect runs entirely in your browser's local context. No search queries, API keys, or data are ever sent to external servers. Your settings are stored in your browser's `localStorage`.
+1. **ACTIVATE HUD:** Press `Ctrl+Shift+B` (Windows) or `Cmd+Shift+B` (Mac) to show your bookmarks bar.
+2. **INSTALL MODULE:** Visit the [Dork Architect Tool Page](https://www.google.com/search?q=YOUR_GITHUB_PAGES_LINK_HERE) and drag the **🚀 Dork Architect** button onto your bar.
+3. **INITIALIZE:** Navigate to [Google.com](https://google.com) and click the bookmark to inject the Architect interface.
 
 ---
 
-## ⚖️ Disclaimer
-*This tool is intended for ethical OSINT research, security auditing, and professional data retrieval. Please ensure your search activities comply with Google's Terms of Service and local regulations.*
+## 🛠 CORE PROTOCOLS
+
+### 🧠 SMART LOGIC PARSER (NEW)
+
+The v3.8.0 engine now features **Boolean Inference**:
+
+* **Comma ( , )** → Interpreted as `AND` (joins terms).
+* **OR (text)** → Interpreted as `OR` (creates alternative logic groups).
+* *Example:* Entering `nasa.gov OR esa.int` in the site field generates `(site:nasa.gov OR site:esa.int)`.
+
+### ⏱️ TEMPORAL SHIFT
+
+A precision slider for time-range targeting. Shift results from the last **minute** to the last **2 years**, or engage the **Custom Date** module for specific historical windows.
+
+### 🧩 PATH WILDCARDS
+
+Quick-inject common OSINT path patterns (e.g., `*/careers`, `*/admin`, `*/wp-content/*`) via the integrated dropdown menu.
+
+### 🔎 SERP AUDIT & SCRUBBING
+
+* **💡 HIGHLIGHT:** Visually isolate target data by marking results in **Neon Green**.
+* **🚫 SCRUB:** Purge the SERP of unwanted noise by hiding results containing specific keywords in real-time.
 
 ---
-**Version:** `2.8.5 // MANUAL_OVERRIDE`  
-**License:** MIT
+
+## ⌨️ ADVANCED COMMANDS
+
+* **MANUAL OVERRIDE:** Typing directly in the "Final Query" box pauses auto-generation, allowing for custom hand-crafted dorks.
+* **AUTO-RESUME:** Typing in any top-level operator field (like `site:`) automatically resumes the logic builder.
+* **WIPE MEMORY:** Reset the local cache to clear all keywords and configurations.
+
+---
+
+## 🔒 DATA INTEGRITY
+
+Dork Architect operates on a **Zero-Exfiltration** policy. The tool runs entirely within your browser's local context. No queries, telemetry, or metadata are ever transmitted to external servers.
+
+---
+
+## ⚖️ LEGAL DISPATCH
+
+*This tool is intended for ethical OSINT research, security auditing, and professional data retrieval. Users are responsible for ensuring search activities comply with Google's Terms of Service and regional legal frameworks.*
+
+---
+
+**BUILD:** `3.8.0 // TACTICAL_NEON`
+
+**ESTATE:** MIT LICENSE
