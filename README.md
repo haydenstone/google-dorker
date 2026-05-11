@@ -7,7 +7,7 @@ Dork Architect is a high-performance bookmarklet designed to transform Google in
 
 ## 📺 Video Demo & Tutorial
 Click the image below to watch the Dork Architect in action:
-[<img src="Screenshot 2026-05-11 121653.png" width="100%">](https://www.youtube.com/watch?v=LqvJ91-pkvA "Click to play")
+[<img src="Screenshot 2026-05-11 121653.png" width="60%">](https://www.youtube.com/watch?v=LqvJ91-pkvA "Click to play")
 
 ---
 
