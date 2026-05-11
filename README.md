@@ -12,9 +12,10 @@
 
 ---
 
-## 📺 VIDEO DEMO & TUTORIAL
+## 📺 Video Demo & Tutorial
+Click the image below to watch the Dork Architect in action:
 
-Click the terminal interface below to view the deployment briefing:
+[<img src="Screenshot 2026-05-11 121653.png" width="40%">](https://www.youtube.com/watch?v=LqvJ91-pkvA "Click to play")
 
 ---
 
