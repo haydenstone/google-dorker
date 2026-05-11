@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dork Architect Pro v2.8.5</title>
+    <style>
+        :root { 
+            --accent: #8ab4f8; 
+            --bg-deep: #121212; 
+            --bg-card: #1e1e1e; 
+            --text-main: #e8eaed; 
+            --text-dim: #9aa0a6; 
+            --border: #3c4043;
+            --success: #81c995;
+            --danger: #f28b82;
+        }
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            background-color: var(--bg-deep); 
+            color: var(--text-main); 
+            display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh; margin: 0; 
+        }
+        .card { 
+            background: var(--bg-card); 
+            padding: 40px; border-radius: 28px; 
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5); 
+            max-width: 650px; width: 95%; text-align: center; 
+            border: 1px solid var(--border); 
+        }
+        h1 { font-size: 28px; margin: 0 0 5px; color: var(--accent); font-weight: 300; letter-spacing: 1px; }
+        .version-badge { 
+            font-size: 10px; color: var(--accent); margin-bottom: 25px; 
+            font-family: monospace; text-transform: uppercase; 
+            background: rgba(138, 180, 248, 0.1); padding: 4px 12px; 
+            border-radius: 100px; display: inline-block; border: 1px solid rgba(138, 180, 248, 0.2);
+        }
+        .instructions { 
+            text-align: left; background: rgba(255,255,255,0.03); 
+            padding: 20px; border-radius: 16px; margin-bottom: 30px; 
+            border: 1px solid var(--border); font-size: 13px; line-height: 1.5; color: var(--text-dim);
+        }
+        .bookmarklet {
+            display: inline-block;
+            padding: 20px 45px;
+            background: var(--accent);
+            color: #121212 !important;
+            text-decoration: none;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: move;
+            box-shadow: 0 4px 15px rgba(138, 180, 248, 0.3);
+        }
+        .bookmarklet:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(138, 180, 248, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>DORK ARCHITECT</h1>
+        <div class="version-badge">v2.8.5 // MANUAL_OVERRIDE</div>
+        
+        <div class="instructions">
+            <strong>⌨️ Query Control:</strong><br>
+            • <strong>Edit Mode:</strong> Typing directly in "Query Review" stops auto-gen.<br>
+            • <strong>Auto-Sync:</strong> Typing in any top field resumes auto-construction.<br>
+            • <strong>Execute:</strong> The search uses exactly what is in the Review box.
+        </div>
+
+        <a class="bookmarklet" href="javascript:(function(){const%20pId='da-v285';const%20ex=document.getElementById(pId);if(ex){ex.style.display='block';return;}const%20ui=document.createElement('div');ui.id=pId;Object.assign(ui.style,{position:'fixed',top:'10px',right:'10px',zIndex:'2147483647',background:'%231e1e1e',padding:'15px',borderRadius:'16px',boxShadow:'0%2020px%2060px%20rgba(0,0,0,0.7)',width:'360px',fontFamily:'sans-serif',border:'1px%20solid%20%233c4043',color:'%23e8eaed',maxHeight:'95vh',overflowY:'auto'});const%20ctrls=document.createElement('div');ctrls.style='position:absolute;top:10px;right:10px;display:flex;gap:10px;';const%20mB=document.createElement('button');mB.innerHTML='&minus;';Object.assign(mB.style,{background:'none',border:'none',color:'%239aa0a6',cursor:'pointer',fontSize:'18px'});const%20xB=document.createElement('button');xB.innerHTML='&times;';Object.assign(xB.style,{background:'none',border:'none',color:'%23f28b82',cursor:'pointer',fontSize:'18px'});const%20rB=document.createElement('button');rB.innerHTML='🔍';Object.assign(rB.style,{display:'none',position:'fixed',top:'10px',right:'10px',width:'40px',height:'40px',background:'%238ab4f8',border:'none',borderRadius:'50%25',cursor:'pointer',fontSize:'18px',zIndex:'2147483647'});mB.onclick=()=>{ui.style.display='none';rB.style.display='block';};xB.onclick=()=>{ui.remove();rB.remove();};rB.onclick=()=>{ui.style.display='block';rB.style.display='none';};ctrls.appendChild(mB);ctrls.appendChild(xB);ui.appendChild(ctrls);document.body.appendChild(rB);const%20h=document.createElement('h3');h.innerHTML='💎%20Dork%20Architect';h.style='margin:0%200%2015px;color:%238ab4f8;font-size:13px;border-bottom:1px%20solid%20%233c4043;padding-bottom:8px;text-align:center;text-transform:uppercase;';ui.appendChild(h);const%20sec=(t)=>{const%20d=document.createElement('div');d.innerHTML='<div%20style=%22font-size:9px;font-weight:bold;color:%239aa0a6;margin:12px%200%206px%202px;text-transform:uppercase%22>'+t+'</div>';ui.appendChild(d);return%20d;};const%20mk=(ph,id,isArea,tp='text')=>{const%20i=document.createElement(isArea?'textarea':'input');i.id=id;i.type=tp;i.placeholder=ph;Object.assign(i.style,{width:'100%25',padding:'8px',marginBottom:'6px',borderRadius:'6px',border:'1px%20solid%20%233c4043',background:'%23121212',color:'%23e8eaed',boxSizing:'border-box',fontSize:'11px'});if(isArea)i.style.height='45px';ui.appendChild(i);return%20i;};sec('🌐%20Operator%20Core');const%20sI=mk('site:','da-s'),fI=mk('filetype:','da-f'),uI=mk('inurl:','da-u'),tI=mk('intitle:','da-t');sec('📄%20Content');const%20txI=mk('intext:','da-tx'),eI=mk('Exact%20Phrases','da-e');sec('⚡%20Query%20Review');const%20qI=mk('...','da-q',true);let%20mO=false;qI.oninput=()=>{mO=true;};const%20tV=['','qdr:n1','qdr:n10','qdr:n30','qdr:h','qdr:h2','qdr:h3','qdr:h4','qdr:h5','qdr:h6','qdr:h12','qdr:h18','qdr:d','qdr:d2','qdr:d3','qdr:w','qdr:w2','qdr:m','qdr:y','qdr:y2','custom'];const%20tL=['Any','1m','10m','30m','1h','2h','3h','4h','5h','6h','12h','18h','24h','2d','3d','1w','2w','1mo','1y','2y','Custom'];sec('⏱️%20Time:%20<span%20id=%22da-tl%22>Any</span>');const%20tS=document.createElement('input');tS.type='range';tS.min=0;tS.max=20;tS.value=0;tS.id='da-ts';Object.assign(tS.style,{width:'100%25',marginBottom:'10px',cursor:'pointer'});ui.appendChild(tS);const%20cd=document.createElement('div');cd.id='da-cd';cd.style.display='none';ui.appendChild(cd);const%20sd=mk('Start%20(MM/DD/YYYY)','da-sd',false);const%20ed=mk('End%20(MM/DD/YYYY)','da-ed',false);cd.appendChild(sd);cd.appendChild(ed);const%20upd=function(save=true,force=false){if(force)mO=false;const%20st={};let%20q='';const%20parse=(f,p,qte)=>{const%20v=f.value;st[f.id]=v;if(!v)return;const%20ts=v.split(',').map(t=>t.trim()).filter(t=>t);if(ts.length===1){q+=p+(qte?'%22'+ts[0]+'%22':ts[0])+'%20';}else%20if(ts.length>1){q+='('+ts.map(t=>p+(qte?'%22'+t+'%22':t)).join('%20OR%20')+')%20';}};parse(sI,'site:');parse(fI,'filetype:');parse(uI,'inurl:');parse(tI,'intitle:',true);parse(txI,'intext:',true);st[eI.id]=eI.value;if(eI.value){eI.value.split(',').forEach(t=>{if(t.trim())q+='%22'+t.trim()+'%22%20';});}if(!mO)qI.value=q.trim();st['da-q']=qI.value;const%20lb=document.getElementById('da-tl');if(lb)lb.innerText=tL[tS.value];cd.style.display=tV[tS.value]==='custom'?'block':'none';st['da-ts']=tS.value;st['da-sd']=sd.value;st['da-ed']=ed.value;if(save)localStorage.setItem('da_state',JSON.stringify(st));};[sI,fI,uI,tI,txI,eI].forEach(el=>el.oninput=()=>upd(true,true));[tS,sd,ed].forEach(el=>el.oninput=()=>upd());sec('🛠️%20Audit%20%26%20Tools');const%20mI=mk('💡%20Highlight','da-m'),xI=mk('🚫%20Scrub','da-x');const%20saved=localStorage.getItem('da_state');if(saved){const%20dat=JSON.parse(saved);[sI,fI,uI,tI,txI,eI].forEach(el=>{if(dat[el.id])el.value=dat[el.id];});if(dat['da-ts']){tS.value=dat['da-ts'];sd.value=dat['da-sd']||'';ed.value=dat['da-ed']||'';}if(dat['da-q']){qI.value=dat['da-q'];mO=true;}upd(false,false);}const%20bE=document.createElement('button');bE.textContent='🚀%20Execute%20Search';Object.assign(bE.style,{width:'100%25',padding:'12px',background:'%238ab4f8',color:'%23121212',border:'none',borderRadius:'8px',cursor:'pointer',fontWeight:'bold',marginTop:'10px'});bE.onclick=function(){upd(true);let%20tParam=tV[tS.value];if(tParam==='custom'){tParam='cdr:1,cd_min:'+sd.value+',cd_max:'+ed.value;}window.location.href='https://www.google.com/search?q='+encodeURIComponent(qI.value.trim())+'&num=100'+(tParam?'&cr=countryUS&tbs='+tParam:'');};const%20bA=document.createElement('button');bA.textContent='🔎%20Audit%20SERP';Object.assign(bA.style,{width:'100%25',marginTop:'8px',padding:'10px',background:'%2381c995',color:'%23121212',border:'none',borderRadius:'8px',cursor:'pointer',fontWeight:'bold'});bA.onclick=function(){const%20kw=mI.value.split(',').map(v=>v.trim().toLowerCase()).filter(v=>v);const%20xw=xI.value.split(',').map(v=>v.trim().toLowerCase()).filter(v=>v);document.querySelectorAll('.g,%20[data-hveid],%20.tF2Cxc').forEach(item=>{const%20txt=item.innerText.toLowerCase();if(xw.some(k=>txt.includes(k))){item.style.display='none';}else%20if(kw.some(k=>txt.includes(k))){Object.assign(item.style,{backgroundColor:'rgba(129,201,149,0.2)',border:'1px%20solid%20%2381c995',borderRadius:'8px',padding:'10px'});}});};const%20bC=document.createElement('button');bC.textContent='🗑️%20Clear%20Memory';Object.assign(bC.style,{width:'100%25',marginTop:'8px',background:'none',color:'%23f28b82',border:'1px%20solid%20%23f28b82',borderRadius:'8px',cursor:'pointer',fontSize:'11px',padding:'5px'});bC.onclick=()=>{localStorage.removeItem('da_state');[sI,fI,uI,tI,txI,eI,mI,xI,qI,sd,ed].forEach(el=>el.value='');tS.value=0;mO=false;upd();};ui.appendChild(bE);ui.appendChild(bA);ui.appendChild(bC);document.body.appendChild(ui);upd(false,false);})();">
+            🚀 Dork Architect
+        </a>
+    </div>
+
+</body>
+</html>
