@@ -15,7 +15,7 @@
 ## 📺 Video Demo & Tutorial
 Click the image below to watch the Dork Architect in action:
 
-[<img src="Screenshot 2026-05-11 130053.png" width="40%">](https://www.youtube.com/watch?v=LqvJ91-pkvA "Click to play")
+[<img src="Screenshot 2026-05-11 130053.png" width="40%">](https://youtu.be/OVf-rKCZ5o8 "Click to play")
 
 ---
 
